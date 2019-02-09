@@ -1,0 +1,32 @@
+{
+  "name": "react-schema",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": {
+    "name": "Quang Thinh",
+    "email": "quangthinh.dico@gmail.com"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^16.4.0"
+  },
+  "dependencies": {
+    "webpack": "^4.29.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "webpack-cli": "^3.2.1"
+  }
+}
