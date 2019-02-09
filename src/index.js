@@ -12,10 +12,15 @@ function compileJson(dom, typeSupports = {}, UnsupportType = null) {
       return React.createElement(UIView, rest, children);
     }
 
-    return React.createElement(UnsupportType, {
-      type,
-      props
-    });
+    if (UnsupportType) {
+      return React.createElement(UnsupportType, {
+        type,
+        props
+      });
+    }
+
+    console.warn('Invalid element: ', type, props);
+    return null;
   };
 
   if (Array.isArray(dom)) {
