@@ -5,7 +5,7 @@ Example:
 
 ```
 import React from 'react';
-import reactSchema from 'react-schema';
+import reactSchema from 'react-json2schema';
 
 
 class Foo extends React.Component {
